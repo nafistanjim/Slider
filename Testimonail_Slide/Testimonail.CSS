@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: relative;
+    background: #ff676d;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40;
+    color: #fff;
+}
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 1s;
+}
+.slide{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;  
+}
+.image img{
+    width: 90%;
+    border-radius: 10px;
+}
+.user-text{
+    position: absolute;
+    background: #2d3a59;
+    padding: 55px;
+    width: 520px;
+    height: 270px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 16px;
+    color: #d3d4d6;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.user-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.user-text h3{
+    margin: 35px 5px;
+    color: beige;
+}
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    color: transparent;
+}
+.btn{
+    display: inline;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #d3d4d6;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.active{
+    background-color: aqua;
+}
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

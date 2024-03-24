@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Testimonail.CSS">
+</head>
+<body>
+    <div class="main">
+        <h1>Testimonial</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active">0</span>
+                <span class="btn">0</span>
+                <span class="btn">0</span>
+                <span class="btn">0</span>
+            </div>
+
+            <div class="testimonial">
+
+                <div class="slide-row" id="slider">
+
+                    <div class="slide">
+                        <div class="user-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident.</p>
+                            <h3>Nafis</h3>
+                            <p>I love U a lot</p>
+                        </div>
+                        <div class="image">
+                            <img src="./person.png" alt="#">
+                        </div>
+                    </div>
+        
+                    <div class="slide">
+                        <div class="user-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident.</p>
+                            <h3>Nafis</h3>
+                            <p>I love U a lot</p>
+                        </div>
+                        <div class="image">
+                            <img src="./person.png" alt="#">
+                        </div>
+                    </div>
+        
+                    <div class="slide">
+                        <div class="user-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident.</p>
+                            <h3>Nafis</h3>
+                            <p>I love U a lot</p>
+                        </div>
+                        <div class="image">
+                            <img src="./person.png" alt="#">
+                        </div>
+                    </div>
+        
+                    <div class="slide">
+                        <div class="user-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident.</p>
+                            <h3>Nafis</h3>
+                            <p>I love U a lot</p>
+                        </div>
+                        <div class="image">
+                            <img src="./person.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slider")
+
+        btn[0].onclick = function(){
+            slide.style.transform = "translatex(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function(){
+            slide.style.transform = "translatex(-800px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function(){
+            slide.style.transform = "translatex(-1600px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[3].onclick = function(){
+            slide.style.transform = "translatex(-2400px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
